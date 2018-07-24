@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<!--    <head>-->
+<!--        <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <div id="bot"/>-->
+<!--        <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>-->
+<!--        <script>-->
+<!--            BotChat.App({-->
+<!--                        directLine: { secret: 'yD-XxkjJxgA.cwA.LUs.ppZBzfgY74c81FGEDz5xCu1OoIZU3V0_nuki_UY8pQA' },-->
+<!--                        user: { id: 'userid' },-->
+<!--                        bot: { id: 'botid' },-->
+<!--                        resize: 'detect'-->
+<!--                        }, document.getElementById("bot"));-->
+<!--            </script>-->
+<!--    </body>-->
+
+<head>
+    <!--
+     Customize this policy to fit your own app's needs. For more guidance, see:
+     https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+     Some notes:
+     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+     * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+     * Enable inline JS: add 'unsafe-inline' to default-src
+     -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+            <meta name="msapplication-tap-highlight" content="no">
+                <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+                    <link rel="stylesheet" type="text/css" href="css/index.css">
+                        <title>Hello World</title>
+                        </head>
+<body>
+    <div class="divForm">
+    <form method = 'GET' >
+    Select card:<br>
+        <select id='select' name='select'>
+            <option> Visa Capitol One 9168 </option>
+            <option> Visa Chase 1234 </option>
+            <option> Visa PNC 8301 </option>
+           
+        </select>
+        <br>Enter amount to transfer:<br>
+        <input type = 'text' name = 'amount' id = 'amount'>
+            <form>
+    </div>
+
+    <div>
+        <a href= './chatbot.html'>Go to chatbot</a>
+    </div>
+
+    
+</body>
+</html>
+
+<style type="text/css">
+    .divForm{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        
+        border: 1px solid red;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -150px;
+    }
+</style>

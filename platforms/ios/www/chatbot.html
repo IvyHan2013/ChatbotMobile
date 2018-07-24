@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+
+<html>
+        <head>
+<!--            <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />-->
+            <link href="./css/botchat.css" rel="stylesheet" />
+        </head>
+        <body>
+            <div id="bot"/>
+<!--            <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>-->
+                <script src="./js/botchat.js"></script>
+            <script>
+                BotChat.App({
+                            directLine: { secret: 'yD-XxkjJxgA.cwA.LUs.ppZBzfgY74c81FGEDz5xCu1OoIZU3V0_nuki_UY8pQA' },
+                            user: { id: 'userid' },
+                            bot: { id: 'botid' },
+                            resize: 'detect'
+                            }, document.getElementById("bot"));
+                </script>
+    </body>
+
+</html>
